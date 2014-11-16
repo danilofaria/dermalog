@@ -1,12 +1,16 @@
 /*
- *= require bootstrap_and_overrides
- *= require flat-ui
- *= require style
- *= require ui-kit-header/css/style
- *= require ui-kit-content/css/style
- *= require ui-kit-price/css/style
- *= require ui-kit-footer/css/style
+ *= require flat-ui/bootstrap/css/bootstrap
+ *= require flat-ui/css/flat-ui
 
+ *= require common-files/css/icon-font
+ *= require common-files/css/animations
+
+ *= require ui-kit/ui-kit-header/css/style
+ *= require ui-kit/ui-kit-content/css/style
+
+ *= require ui-kit/ui-kit-price/css/style
+ *= require ui-kit/ui-kit-footer/css/style
+ *= require style
  */
 
 

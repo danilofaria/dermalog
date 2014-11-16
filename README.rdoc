@@ -1,4 +1,4 @@
-== README
+== Dermalog
 
 (1) Install Rails (e.g. http://railsinstaller.org/en)
 (2) To install all necessary libraries (gems) run the following command on the console on the project's directory:
@@ -8,3 +8,13 @@
 (4) To start the serve run:
   rails server
 (5) The app will be available at localhost:3000/
+
+
+=== Pushing to stash
+
+
+(1) go to 
+  https://ase.cs.columbia.edu/stash/projects/TEAM4_14/repos/repo/browse
+
+(2) follow instructions there
+

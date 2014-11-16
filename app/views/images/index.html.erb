@@ -1,36 +1,44 @@
-<h1>Listing images</h1>
+<div class="container">
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Listing images</h3>
+    </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-striped">
+      <thead>
+        <tr class="case-list">
+          <th>Title</th>
+          <th>Thumbnail</th>
+          <!-- <th>Url</th> -->
+          <!-- <th>Description</th> -->
+          <th>Case log</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr class="case-list">
-      <th>Title</th>
-      <th>Thumbnail</th>
-      <!-- <th>Url</th> -->
-      <!-- <th>Description</th> -->
-      <th>Case log</th>
-      <th colspan="3"></th>
-    </tr>
-    <hr>
-  </thead>
-
-  <tbody>
-    <% @images.each do |image| %>
-      <tr class="case-list">
-        <td><%= image.title %></td>
-        <td>
-            <img src="<%= image.url %>" alt="case log image" style="width:50px;height:50px"> <br/>
-        </td>          
-        <!-- <td><%= image.url %></td> -->
-        <!-- <td><%= image.description %></td> -->
-        <td><%= link_to image.case_log.title, image.case_log %></td>
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+      <tbody>
+        <% @images.each do |image| %>
+          <tr class="case-list">
+            <td><%= image.title %></td>
+            <td>
+                <img src="<%= image.url %>" alt="case log image" style="width:50px;height:50px"> <br/>
+            </td>          
+            <!-- <td><%= image.url %></td> -->
+            <!-- <td><%= image.description %></td> -->
+            <td><%= link_to image.case_log.title, image.case_log %></td>
+            <td><%= link_to 'Show', image %></td>
+            <td><%= link_to 'Edit', edit_image_path(image) %></td>
+            <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
 
 

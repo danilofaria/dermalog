@@ -1,6 +1,22 @@
-<h1>Editing case log</h1>
+<div class="container">
+<section class="">
+	<!-- Title -->
+	<div class="row">
+	    <div class="col-lg-12">
+	        <h3>Editing case log</h3>
+	    </div>
+	</div>
+	<hr>
+	<div class="row">
+	    <div class="col-sm-8 col-sm-offset-2">
+	    	<div class="signup-form">
+			<%= render 'form' %>
+			</div>
+		</div>
+	</div>
 
-<%= render 'form' %>
+	<%= link_to 'Show', @case_log %> |
+	<%= link_to 'Back', case_logs_path %>
 
-<%= link_to 'Show', @case_log %> |
-<%= link_to 'Back', case_logs_path %>
+</section>
+</div>

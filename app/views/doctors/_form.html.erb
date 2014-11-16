@@ -1,7 +1,7 @@
 <%= form_for(@doctor) do |f| %>
   <% if @doctor.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@doctor.errors.count, "error") %> prohibited this doctor from being saved:</h2>
+    <div id="error_explanation" style="color: rgb(223, 81, 55);">
+      <span><%= pluralize(@doctor.errors.count, "error") %> prohibited this doctor from being saved:</span>
 
       <ul>
       <% @doctor.errors.full_messages.each do |message| %>
@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :license %><br>
-    <%= f.text_field :license %>
+    <%= f.text_field :license, class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :state %><br>
-    <%= f.text_field :state %>
+    <%= f.text_field :state, class: "form-control" %>
   </div>
   <% if current_user.try(:admin) %>
     <div class="field">

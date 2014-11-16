@@ -11,33 +11,6 @@ and open the template in the editor.
 .caseview{
     padding-top: 0px;
 }
-
-#index-login {
-    width:50%;
-    margin-top: 20px;
-}
-
-#signup-button {
-    width: 100px;
-}
-
-.clear-both {
-    clear: both;
-}
-
-.row-main {
-    min-height: 380px;
-    padding-bottom: 65px;
-}
-
-#flash_notice {
-    font-size: 14px;
-}
-
-.case-list th {
-    min-width: 200px;
-}
-
 .dl-sidebar{
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;

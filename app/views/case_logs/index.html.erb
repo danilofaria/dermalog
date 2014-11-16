@@ -1,5 +1,15 @@
-    <h1>Listing case logs</h1>
-    <table>
+<div class="container">
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Listing case logs</h3>
+    </div>
+</div>
+<!-- end of title -->
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-striped">
       <thead>
         <tr class="case-list">
           <th>Title</th>
@@ -8,7 +18,6 @@
           <th colspan="2"></th>
           <th><%= link_to 'New Case log', new_case_log_path %></th>
         </tr>
-        <hr>
       </thead>
 
       <tbody>
@@ -24,5 +33,6 @@
         <% end %>
       </tbody>
     </table>
-
-    <br>
+  </div>
+</div>
+</div>

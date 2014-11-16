@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Dermalog</title>
+  <link rel="shortcut icon" href="http://www.sornorbkn.com/images/file_icon.png">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -51,14 +52,7 @@
 
 
 <% if !(params[:controller] == 'sessions') %>
-    <section class="price-2">
-    <div class="row row-main">
-    <div class="col-sm-8 col-sm-offset-1">
-
-    <%= yield %>
-    </div>
-    </div>
-    </section>
+        <%= yield %>
 <% else %>
     <%= yield %>
 <% end %>
