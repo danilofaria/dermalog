@@ -33,6 +33,8 @@ describe ImagesController, :type => :controller do
   before :each do
     @user = FactoryGirl.build(:doctor, admin: true)
     ImagesController.any_instance.stub(:current_user).and_return @user
+    Permission.any_instance.stub(:allow?).and_return true
+    UrlValidator.any_instance.stub(:validate_each).and_return true
   end
 
   describe "GET index" do
@@ -50,10 +52,6 @@ describe ImagesController, :type => :controller do
       assigns(:image).should eq(image)
     end
     
-    it "request an invalid image id" do
-      get :show, {:id => 1}, valid_session
-      response.should redirect_to(images_path)
-    end
   end
 
   describe "GET new" do

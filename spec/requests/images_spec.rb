@@ -4,6 +4,8 @@ describe "Images", :type => :request do
   before :each do
     @user = FactoryGirl.build(:doctor, admin: true)
     ImagesController.any_instance.stub(:current_user).and_return @user
+    Permission.any_instance.stub(:allow?).and_return true
+    UrlValidator.any_instance.stub(:validate_each).and_return true
   end
 
   describe "GET /images" do

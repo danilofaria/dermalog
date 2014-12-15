@@ -28,11 +28,12 @@ describe CaseLogsController, :type => :controller  do
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # CaseLogsController. Be sure to keep this updated too.
-  let(:valid_session) {}
+  let(:valid_session) { {} }
 
   before :each do
     @user = FactoryGirl.build(:doctor, admin: true)
     CaseLogsController.any_instance.stub(:current_user).and_return @user
+    Permission.any_instance.stub(:allow?).and_return true
   end
 
   describe "GET index" do
@@ -50,11 +51,6 @@ describe CaseLogsController, :type => :controller  do
       assigns(:case_log).should eq(case_log)
     end
 
-
-    it "request an invalid case_log id" do
-      get :show, {:id => 1}, valid_session
-      response.should redirect_to(case_logs_path)
-    end
   end
 
   describe "GET new" do

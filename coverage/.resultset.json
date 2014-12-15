@@ -1,31 +1,35 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/helpers/application_helper.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/helpers/case_logs_helper.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/case_logs_helper.rb": [
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/helpers/dermalog_helper.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/dermalog_helper.rb": [
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/helpers/doctors_helper.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/doctors_helper.rb": [
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/helpers/images_helper.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/images_helper.rb": [
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/helpers/sessions_helper.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/controllers/case_logs_controller.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/helpers/shares_helper.rb": [
+        1,
+        null
+      ],
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/controllers/case_logs_controller.rb": [
         1,
         1,
         null,
@@ -37,6 +41,7 @@
         null,
         0,
         null,
+        2,
         null,
         null,
         null,
@@ -98,12 +103,13 @@
         null,
         null,
         1,
+        1,
+        17,
+        null,
+        null,
         null,
         1,
-        10,
-        10,
-        1,
-        null,
+        18,
         null,
         null,
         null,
@@ -112,7 +118,7 @@
         null,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/controllers/application_controller.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -131,18 +137,22 @@
         1,
         null,
         1,
-        58,
+        56,
         null,
         null,
         1,
-        58,
+        null,
+        null,
+        null,
+        1,
+        56,
         0,
         null,
         null,
         null,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/controllers/dermalog_controller.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/controllers/dermalog_controller.rb": [
         1,
         1,
         2,
@@ -166,6 +176,10 @@
         0,
         0,
         0,
+        0,
+        null,
+        null,
+        0,
         null,
         null,
         0,
@@ -178,7 +192,7 @@
         null,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/controllers/doctors_controller.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/controllers/doctors_controller.rb": [
         1,
         1,
         null,
@@ -250,9 +264,17 @@
         null,
         null,
         1,
+        1,
+        17,
+        null,
+        null,
         null,
         1,
-        9,
+        18,
+        18,
+        null,
+        null,
+        18,
         null,
         null,
         null,
@@ -261,7 +283,7 @@
         null,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/controllers/images_controller.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/controllers/images_controller.rb": [
         1,
         1,
         null,
@@ -273,6 +295,7 @@
         null,
         0,
         null,
+        2,
         null,
         null,
         null,
@@ -296,6 +319,10 @@
         5,
         null,
         5,
+        5,
+        null,
+        0,
+        null,
         null,
         5,
         null,
@@ -335,21 +362,22 @@
         null,
         null,
         1,
+        1,
+        17,
+        null,
+        null,
+        null,
+        1,
+        18,
+        null,
+        null,
         null,
         1,
         10,
-        10,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        10,
         null,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/controllers/sessions_controller.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -372,14 +400,16 @@
         null,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/models/case_log.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/models/case_log.rb": [
+        1,
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/models/doctor.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/models/doctor.rb": [
+        1,
         1,
         1,
         1,
@@ -388,30 +418,79 @@
         1,
         1,
         1,
-        null
-      ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/models/image.rb": [
-        1,
-        1,
         1,
         null
       ],
-      "/Users/julianalouback/Desktop/School/ASE/dermalog/app/models/permission.rb": [
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/models/image.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/validators/url_validator.rb": [
         1,
         1,
         null,
-        58,
-        55,
-        53,
-        47,
-        47,
+        1,
+        null,
+        1,
+        0,
         0,
         null,
+        null,
+        null,
+        1,
+        null,
         0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/models/permission.rb": [
+        1,
+        1,
+        23,
+        20,
+        18,
+        12,
+        12,
+        12,
+        12,
+        11,
+        11,
+        11,
+        11,
+        11,
+        null,
+        0,
+        null,
+        null
+      ],
+      "C:/Users/Danilo/Dropbox/Dev/Dermalog/app/models/share.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1416811831
+    "timestamp": 1418678739
   }
 }

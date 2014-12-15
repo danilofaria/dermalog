@@ -3,12 +3,14 @@ require "spec_helper"
 describe ImagesController do
   describe "routing" do
 
-    it "routes to #index" do
-      get("/images").should route_to("images#index")
+    before :each do
+      Permission.any_instance.stub(:allow?).and_return true
+      UrlValidator.any_instance.stub(:validate_each).and_return true
     end
 
-    it "routes to #new" do
-      get("/images/new").should route_to("images#new")
+
+    it "routes to #index" do
+      get("/images").should route_to("images#index")
     end
 
     it "routes to #show" do
@@ -17,10 +19,6 @@ describe ImagesController do
 
     it "routes to #edit" do
       get("/images/1/edit").should route_to("images#edit", :id => "1")
-    end
-
-    it "routes to #create" do
-      post("/images").should route_to("images#create")
     end
 
     it "routes to #update" do
