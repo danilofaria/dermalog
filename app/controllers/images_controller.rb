@@ -30,9 +30,13 @@ class ImagesController < ApplicationController
   # POST /images
   # POST /images.json
   def create
-    @image = Image.new(image_params)
-
     @case_log = CaseLog.find_by_id(params[:case_log_id])
+
+    begin 
+      @image = Image.new(image_params)
+    rescue
+      redirect_to new_case_log_image_path(@case_log), notice: "Url is not valid!"
+    end
 
     @image.case_log = @case_log
 
