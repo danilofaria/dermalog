@@ -33,8 +33,14 @@ class DoctorsController < ApplicationController
 
     license_check = LicenseCheck.new
 
+    begin
     license_response = license_check.check_license(@doctor)
-    
+    rescue
+      flash.now.alert = "Check your internet connection"
+      render "new"
+      return
+    end  
+
     if license_response != LicenseCheck::VALID_LICENSE
       case license_response
       when LicenseCheck::INVALID_LICENSE

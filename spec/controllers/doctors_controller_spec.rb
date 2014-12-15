@@ -33,6 +33,7 @@ describe DoctorsController, :type => :controller do
   before :each do
     @user = FactoryGirl.build(:doctor, admin: true)
     DoctorsController.any_instance.stub(:current_user).and_return @user
+    LicenseCheck.any_instance.stub(:check_license).and_return LicenseCheck::VALID_LICENSE
   end
 
   describe "GET index" do
