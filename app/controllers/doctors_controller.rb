@@ -31,6 +31,26 @@ class DoctorsController < ApplicationController
     #     return
     # end 
 
+    license_check = LicenseCheck.new
+
+    license_response = license_check.check_license(@doctor)
+    
+    if license_response != LicenseCheck::VALID_LICENSE
+      case license_response
+      when LicenseCheck::INVALID_LICENSE
+        flash.now.alert = "Invalid license"
+      when LicenseCheck::INVALID_STATE
+        flash.now.alert = "License issuing state does not correspond to provided license"
+      when LicenseCheck::INVALID_NAME
+        flash.now.alert = "Doctor name does not correspond to provided license"
+      when LicenseCheck::ERROR
+        flash.now.alert = "Error checking license, please try again"
+      end
+
+      render "new"
+      return
+    end
+
     respond_to do |format|
       if @doctor.save
         session[:user_id] = @doctor.id
