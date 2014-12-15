@@ -1,18 +1,7 @@
-          <% if @doctor.errors.any? %>
-            <div class="error_messages">
-              <strong>Form is invalid</strong>
-              <ul>
-                <% @doctor.errors.full_messages.each do |message| %>
-                  <li><%= message %></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-
 <h1>Sign Up</h1>
+<hr>
 <%= form_for @doctor do |f| %>
   <!-- registration -->
-  <section class="price-2">
       <div class="row">
           <div class="col-sm-7">
               <form>
@@ -60,7 +49,19 @@
               </div>
               </form>
           </div>
+          <% if @doctor.errors.any? %>
+            <div class="error_messages">
+              <strong>Form is invalid</strong>
+              <ul>
+                <% @doctor.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
       </div>
-  </section>
   <!--end of registration-->
-<% end %>
+<% end %>         
+
+          
+

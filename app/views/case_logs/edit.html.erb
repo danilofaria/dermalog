@@ -1,31 +1,16 @@
-<div class="container">
-<section class="">
-	<!-- Title -->
-	<div class="row">
-	    <h3>Editing case log</h3>
-	</div>
-	<hr>
-	<div class="row">
-	    <div class="col-sm-8 col-sm-offset-1">
-	    	<div class="signup-form">
-			<%= render 'form' %>
-			</div>
-		</div>
-		<% if @case_log.errors.any? %>
-	    <div id="error_explanation" class="col-sm-3">
-	      <strong><%= pluralize(@case_log.errors.count, "error") %> prohibited this case_log from being saved:</strong>
+<h1>Editing case log</h1>
+<hr>
+<div class="row">
+    <%= render 'form' %>
+	<% if @case_log.errors.any? %>
+    <div id="error_explanation" class="col-sm-3">
+      <strong><%= pluralize(@case_log.errors.count, "error") %> prohibited this case_log from being saved:</strong>
 
-	      <ul>
-	      <% @case_log.errors.full_messages.each do |message| %>
-	        <li><%= message %></li>
-	      <% end %>
-	      </ul>
-	    </div>
-	  	<% end %>
-	</div>
-
-	<%= link_to 'Show', @case_log %> |
-	<%= link_to 'Back', case_logs_path %>
-
-</section>
+      <ul>
+      <% @case_log.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  	<% end %>
 </div>

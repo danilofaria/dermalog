@@ -1,17 +1,9 @@
-<div class="container">
-<!-- Title -->
-<div class="row">
-	<h1>New case log</h1>
-</div>
+<h1>New case log</h1>
 <hr>
 <div class="row">
-    <div class="col-sm-8 col-sm-offset-1">
-    	<div class="signup-form">
-		<%= render 'form' %>
-		</div>
-	</div>
+	<%= render 'form' %>
 	<% if @case_log.errors.any? %>
-    <div id="error_explanation" class="col-sm-3">
+    <div class="error_messages">
       <strong><%= pluralize(@case_log.errors.count, "error") %> prohibited this case_log from being saved:</strong>
 
       <ul>
@@ -21,6 +13,4 @@
       </ul>
     </div>
   	<% end %>
-</div>
-<%= link_to 'Back', case_logs_path %>
 </div>

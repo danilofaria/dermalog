@@ -1,10 +1,21 @@
-<h1>Sharing case log</h1>
+<h1>Share case log</h1>
 
-<p>
-  <strong>Title:</strong>
-  <%= @case_log.title %>
-</p>
-
+<strong style="margin-left: 20px; margin-bottom: 10px;">Title:</strong>
+<%= @case_log.title %>
+<br>
 <%= render 'form' %>
 
-<%= link_to 'Back', shares_path %>
+<% if @share.errors.any? %>
+<div class="error_messages">
+  <h2><%= pluralize(@share.errors.count, "error") %> prohibited this share from being saved:</h2>
+
+  <ul>
+  <% @share.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>
+<strong id="notice"><%= notice %></strong>
+
+

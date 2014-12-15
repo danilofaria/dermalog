@@ -53,14 +53,12 @@
 
 
 <% if !(params[:controller] == 'sessions') %>
-    <section class="price-2">
     <div class="row row-main">
-    <div class="col-sm-8 col-sm-offset-1">
+    <div class="container">
 
     <%= yield %>
     </div>
     </div>
-    </section>
 <% else %>
     <%= yield %>
 <% end %>

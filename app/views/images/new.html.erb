@@ -1,5 +1,16 @@
 <h1>New image</h1>
-
+<hr>
+<div class="row">
 <%= render 'form' %>
+<% if @image.errors.any? %>
+	<div class="error_messages">
+	  <strong><%= pluralize(@image.errors.count, "error") %> prohibited this image from being saved:</strong>
 
-<%= link_to 'Back', images_path %>
+	  <ul>
+	  <% @image.errors.full_messages.each do |message| %>
+	    <li><%= message %></li>
+	  <% end %>
+	  </ul>
+	</div>
+<% end %>
+</div>

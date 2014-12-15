@@ -2,5 +2,17 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @share %> |
-<%= link_to 'Back', shares_path %>
+<%= link_to 'Show', @share %>
+
+<% if @share.errors.any? %>
+<div class="error_messages">
+  <h2><%= pluralize(@share.errors.count, "error") %> prohibited this share from being saved:</h2>
+
+  <ul>
+  <% @share.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>
+<strong id="notice"><%= notice %></strong>
