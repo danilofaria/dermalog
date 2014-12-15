@@ -36,14 +36,16 @@ class SharesController < ApplicationController
     email = share_params[:doctor_email]
 
     if email == ""
-      redirect_to new_case_log_share_path(@case_log), notice: "Email field is blank"
+      @share.errors.add(:email, "can't be blank")
+      render :new
       return 
     end
     doctor = Doctor.find_by_email(email)
     if doctor
       @share.doctor = doctor
     else
-      redirect_to new_case_log_share_path(@case_log), notice: "There is no doctor with this email address"
+      @share.errors[:base] << "There is no doctor with this email address"
+      render :new
       return 
     end
     respond_to do |format|
