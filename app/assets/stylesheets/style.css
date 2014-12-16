@@ -90,6 +90,10 @@ h1 {
     height: 360px;
 }
 
+#flash_notice, #notice {
+    font-size: 13pt;
+}
+
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;

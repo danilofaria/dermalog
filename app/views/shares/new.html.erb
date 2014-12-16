@@ -7,7 +7,7 @@
 
 <% if @share.errors.any? %>
 <div class="error_messages">
-  <h2><%= pluralize(@share.errors.count, "error") %> prohibited this share from being saved:</h2>
+  <strong><%= pluralize(@share.errors.count, "error") %> prohibited this share from being saved:</strong>
 
   <ul>
   <% @share.errors.full_messages.each do |message| %>
@@ -16,6 +16,5 @@
   </ul>
 </div>
 <% end %>
-<strong id="notice"><%= notice %></strong>
 
 
